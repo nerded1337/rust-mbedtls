@@ -395,6 +395,7 @@ pub const FEATURE_DEFINES: &'static [(&'static str, CDefine)] = &[
     ("std",                   ("MBEDTLS_NO_PLATFORM_ENTROPY",               Undefined)),
     ("std",                   ("MBEDTLS_DEBUG_C",                           Defined)),
     ("std",                   ("MBEDTLS_ENTROPY_C",                         Defined)),
+    ("platform_c",            ("MBEDTLS_PLATFORM_C",                        Defined)),
     ("custom_printf",         ("MBEDTLS_PLATFORM_C",                        Defined)),
     ("custom_printf",         ("MBEDTLS_PLATFORM_PRINTF_MACRO",             DefinedAs("mbedtls_printf"))),
     ("aesni",                 ("MBEDTLS_AESNI_C",                           Defined)),

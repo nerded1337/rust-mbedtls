@@ -33,6 +33,7 @@ cmake = "0.1.44"
 # * memmove/memcpy/memcmp/memset
 # * rand/printf (used only for self tests. optionally use custom_printf)
 default = ["std", "zlib", "time", "pthread", "aesni", "padlock", "legacy_protocols"]
+platform_c = []
 std = []
 custom_printf = []
 custom_time = ["custom_gmtime_r", "time"]

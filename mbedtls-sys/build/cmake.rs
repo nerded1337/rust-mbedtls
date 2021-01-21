@@ -27,7 +27,8 @@ impl super::BuildConfig {
         {
             cmk.cflag("-fno-builtin")
                 .cflag("-D_FORTIFY_SOURCE=0")
-                .cflag("-fno-stack-protector");
+                .cflag("-fno-stack-protector")
+                .cflag("/GS-");
         }
         let mut dst = cmk.build();
         dst.push("build");
